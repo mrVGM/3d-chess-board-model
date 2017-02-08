@@ -1,5 +1,3 @@
-//Васил Магаранов ф.н 80854 гр. 7
-
 #include <math.h>
 #include <GL/glfw.h>
 #include <stdio.h>
@@ -248,7 +246,7 @@ void drawUnitCylinder ( )
         float x2 = x1*dx-y1*dy;
         float y2 = y1*dx+x1*dy;
 
-        // Рисуване на околна стена
+        // ГђГЁГ±ГіГўГ Г­ГҐ Г­Г  Г®ГЄГ®Г«Г­Г  Г±ГІГҐГ­Г 
         glBegin( GL_POLYGON );
             glNormal3f( x1, y1, 0 );
             glVertex3f( x1, y1, 0 );
@@ -258,7 +256,7 @@ void drawUnitCylinder ( )
             glVertex3f( x2, y2, 0 );
         glEnd();
 
-        // Рисуване на парче от долната основа
+        // ГђГЁГ±ГіГўГ Г­ГҐ Г­Г  ГЇГ Г°Г·ГҐ Г®ГІ Г¤Г®Г«Г­Г ГІГ  Г®Г±Г­Г®ГўГ 
         glBegin( GL_POLYGON );
             glNormal3f(  0,  0, -1 );
             glVertex3f(  0,  0,  0 );
@@ -266,7 +264,7 @@ void drawUnitCylinder ( )
             glVertex3f( x2, y2,  0 );
         glEnd();
 
-        // Рисуване на парче от горната основа
+        // ГђГЁГ±ГіГўГ Г­ГҐ Г­Г  ГЇГ Г°Г·ГҐ Г®ГІ ГЈГ®Г°Г­Г ГІГ  Г®Г±Г­Г®ГўГ 
         glBegin( GL_POLYGON );
             glNormal3f(  0,  0, 1 );
             glVertex3f(  0,  0, 1 );
@@ -296,7 +294,7 @@ void drCone (float r)
         float x2 = x1*dx-y1*dy;
         float y2 = y1*dx+x1*dy;
 
-        // Рисуване на околна стена
+        // ГђГЁГ±ГіГўГ Г­ГҐ Г­Г  Г®ГЄГ®Г«Г­Г  Г±ГІГҐГ­Г 
         glBegin( GL_POLYGON );
             glNormal3f( x1, y1, 0 );
             glVertex3f( x1, y1, 0 );
@@ -306,7 +304,7 @@ void drCone (float r)
             glVertex3f( x2, y2, 0 );
         glEnd();
 
-        // Рисуване на парче от долната основа
+        // ГђГЁГ±ГіГўГ Г­ГҐ Г­Г  ГЇГ Г°Г·ГҐ Г®ГІ Г¤Г®Г«Г­Г ГІГ  Г®Г±Г­Г®ГўГ 
         glBegin( GL_POLYGON );
             glNormal3f(  0,  0, -1 );
             glVertex3f(  0,  0,  0 );
@@ -314,7 +312,7 @@ void drCone (float r)
             glVertex3f( x2, y2,  0 );
         glEnd();
 
-        // Рисуване на парче от горната основа
+        // ГђГЁГ±ГіГўГ Г­ГҐ Г­Г  ГЇГ Г°Г·ГҐ Г®ГІ ГЈГ®Г°Г­Г ГІГ  Г®Г±Г­Г®ГўГ 
         glBegin( GL_POLYGON );
             glNormal3f(  0,  0, 1 );
             glVertex3f(  0,  0, 1 );
@@ -594,7 +592,7 @@ void knight() {
 
 void drawOxyz()
 {
-    // Рисуване на лъчите
+    // ГђГЁГ±ГіГўГ Г­ГҐ Г­Г  Г«ГєГ·ГЁГІГҐ
     glBegin( GL_LINES );
         // OX
         glVertex3f( 0.0, 0.0, 0.0 );
@@ -607,7 +605,7 @@ void drawOxyz()
         glVertex3f( 0.0, 0.0, 0.0 );
     glEnd();
 
-    // Рисуване на стрелките
+    // ГђГЁГ±ГіГўГ Г­ГҐ Г­Г  Г±ГІГ°ГҐГ«ГЄГЁГІГҐ
     glBegin( GL_TRIANGLES );
         // OX
         glVertex3f( 5.0, 0.0, 0.0 );
